@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div>
+    <h2 class="text-center">Cadastrar novo cliente</h2>
+
+    <table>
+        <tr>
+            <td>Nome: </td>
+            <td><input id="txtNomeCliente" type="text" /></td>
+        </tr>
+        <tr>
+            <td>CPF: </td>
+            <td><input id="txtCpfCliente" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Endereço: </td>
+            <td><input id="txtEnderecoLogradouroCliente" type="text" /></td>
+            
+        </tr>
+        <tr>
+            <td>Número: </td>
+            <td><input id="txtEnderecoNumeroCliente" type="text" /></td>
+            
+        </tr>
+        <tr>
+            <td>Complemento: </td>
+            <td><input id="txtEnderecoComplementoCliente" type="text" /></td>
+            
+        </tr>
+        <tr>
+            <td>Bairro: </td>
+            <td><input id="txtEnderecoBairroCliente" type="text" /></td>
+            
+        </tr>
+        <tr>
+            <td>Cidade: </td>
+            <td><input id="txtEnderecoCidadeCliente" type="text" /></td>
+            
+        </tr>
+        <tr>
+            <td>Estado: </td>
+            <td><input id="txtEnderecoEstadoCliente" type="text" /></td>
+            
+        </tr>
+    </table>
+    <div class="text-center">
+        <input id="btnInserirCliente" type="button" value="Cadastrar" />
+       @* @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+        @Html.ActionLink("Details", "Details", { id=item.ID })  |
+        @Html.ActionLink("Delete", "Delete", { id=item.ID })
+        Enviar dados para Controller - método Create (Post)*@
+    </div>
+</div>

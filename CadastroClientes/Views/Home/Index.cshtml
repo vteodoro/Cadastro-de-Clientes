@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<CadastroClientes.Models.ClienteModel>
+
+<div class="text-center">
+    <h1 class="display-4">Clientes</h1>
+    <style>
+	    table, th, td {
+		    border: 1px solid black;     
+	    }
+    </style>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>CPF</td>
+                <td>Endereço</td>
+                <td colspan="2">Ação</td>
+            </tr>
+        </thead>
+        <tbody>
+            @*@foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.NomeCliente</td>
+                    <td>@item.CpfCliente</td>
+                    <td>@item.EnderecoCliente</td>
+                    <td> <input id="btnAlterar" type="button" value="Alterar" /></td> Chamar método Edit na Controller
+                    <td> <input id="btnExcluir" type="button" value="Excluir" /></td> Chamar método Delete na Controller
+                </tr>
+            }*@
+            <tr>
+                <td>Maria Dos Santos Da Silva</td>
+                <td>123.456.789.00</td>
+                <td>Rua Zé Maria, Nº 10, Casa 02, Vila Joana - Santo André/SP</td>
+                <td> <input id="btnAlterar" type="button" value="Alterar" /></td>
+                <td> <input id="btnExcluir" type="button" value="Excluir" /></td>
+            </tr>
+            <tr>
+                <td>João Dos Santos Da Silva</td>
+                <td>123.456.789.00</td>
+                <td>Rua Zé Maria, Nº 10, Casa 02, Vila Joana - Santo André/SP</td>
+                <td> <input id="btnAlterar" type="button" value="Alterar" /></td>
+                <td> <input id="btnExcluir" type="button" value="Excluir" /></td>
+            </tr>
+            <tr>
+                <td>José Dos Santos Da Silva</td>
+                <td>123.456.789.00</td>
+                <td>Rua Zé Maria, Nº 10, Casa 02, Vila Joana - Santo André/SP</td>
+                <td> <input id="btnAlterar" type="button" value="Alterar" /></td>
+                <td> <input id="btnExcluir" type="button" value="Excluir" /></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
